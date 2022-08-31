@@ -1,0 +1,317 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: montserrat, sans-serif;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    width: 100%;
+    background-color: rgb(173 193 212);
+    overflow-x:hidden ;
+}
+
+
+/* NAV  */
+nav {
+    background-color: rgb(24, 24, 25);
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 2px;
+}
+
+.title {
+    color: aliceblue;
+    font-size: 35px;
+    line-height: 80px;
+    font-weight: bold;
+    margin-right: 650px;
+}
+
+.ul-list {
+    float: right;
+    margin-right: 80px;
+}
+
+.ul-list li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+a.bar-link {
+    text-decoration: none;
+    list-style-type: none;
+    color: rgb(216, 207, 207);
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+
+}
+
+a.bar-link:hover,
+a.active-link {
+    background-color: rgb(56 56 59);
+    border-bottom: 2px solid rgb(199, 203, 206);
+    transition: 0.5s linear;
+}
+
+.img-bg {
+    background-image: linear-gradient(rgba(90, 100, 159, 0.705),rgba(63, 73, 127, 0.655)), url("../sourses/applications-of-computer-programming.webp") ;
+    height: 600px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    margin-bottom: 50px;
+}
+#icon-bar {
+    width:5%;
+    height: 30px;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 20px;
+    margin-left: 35px ;
+}
+
+#img-title {
+    width:20%;
+    height: 150px;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 50px;
+    margin-left: 500px;
+    margin-top: 200px;
+}
+
+
+/* .logo {
+    position: absolute;
+    top: 200px;
+    left: 650px;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    mix-blend-mode: luminosity;
+} */
+
+.sticky {
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+.sticky + .content{
+    padding-top: 45px;
+}
+
+.row {
+    align-items: center;
+    justify-content: space-between 0px;
+    inline-size: 0.5px;
+}
+
+.content img{
+    margin: 45px 30px 0 20px;
+    /* margin-top: 45px;
+    margin-right: 30px; */
+}
+h1 {
+    margin-left:100px ;
+}
+section {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 50px;
+}
+section p {
+    font-size: xx-large;
+    color: deepskyblue;
+    text-shadow: 0 7px 12px rgb(69, 70, 114);
+    ;
+}
+
+/* hacker */
+.hak-prag {
+    text-align: justify;
+    font-family: "potta 1", cursive;
+    margin-left: 0;
+    color: rgb(20, 25, 68);
+    font-size: large;
+}
+
+/* web deavelopment */
+
+.web {
+    margin-left: 0cm;
+}
+
+.web-prag {
+    text-align: justify;
+    font-family: "potta 1", cursive;
+    color: rgb(20, 25, 68);
+    font-size: large;
+
+}
+
+/* app deavelopment */
+
+.app {
+    margin-left: 0cm;
+}
+
+.app-prag {
+    text-align: justify;
+    font-family: "potta 1", cursive;
+    color: rgb(20, 25, 68);
+    font-size: large;
+
+}
+
+/* machine learning */
+
+.machinelearning {
+    margin-left: 0cm;
+}
+
+.machinelearning-prag {
+    text-align: justify;
+    font-family: "potta 1", cursive;
+    color: rgb(20, 25, 68);
+    font-size: large;
+}
+
+ /* footer */
+
+footer {
+    background-image: url(https://www.softwarepursuits.com/content/uploads/suresync-suite-background.jpg);
+    color: white;
+    align-items: center;
+    align-content: flex-start;
+}
+
+h4 {
+    font-size: 50px;
+    color: deepskyblue;
+}
+
+.mero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.colomn {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 70px 18px;
+}
+
+.logo-footer {
+    margin-left: 10px;
+    letter-spacing: 1px;
+    margin: 12px;
+    font-size: 10px;
+    font-family: "potta 1", cursive;
+    text-shadow: 0 5px 6px rgb(49, 108, 128);
+    color: rgb(229, 238, 241);
+}
+
+.colomn h5 {
+    font-size: 20px;
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 8px;
+    color: deepskyblue;
+    text-shadow: 0 0 12px rgb(5, 46, 45);
+}
+
+.colomn h5::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 60%;
+    background-color: deepskyblue;
+}
+
+.footer-links li {
+    margin: 12px 0;
+    list-style: none;
+}
+
+.footer-links li a {
+    text-decoration: none;
+    color: azure;
+    transition: 0.3s;
+}
+
+.footer-links li a:hover {
+    color: aqua;
+    text-shadow: 0 0 12px;
+}
+
+.contact-details li {
+    list-style: none;
+    align-items: center;
+    display: flex;
+    margin: 12px 0;
+    color: aqua;
+}
+
+.contact-details li i {
+    height: 25px;
+    width: 20px;
+    border: 3px solid deepskyblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(232, 233, 233);
+    transition: 0.3s;
+    margin-right: 12px;
+}
+
+.contact-details li i:hover,
+.contact-details li span:hover {
+    color: deepskyblue;
+    text-shadow: 0 0 12px;
+}
+
+.social-links {
+    display: flex;
+    list-style: none;
+}
+
+.social-links li {
+    margin-right: 12px;
+}
+
+.social-links li a {
+    height: 25px;
+    width: 20px;
+    border: 3px solid deepskyblue;
+    background-color: deepskyblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(238, 249, 249);
+    text-decoration: none;
+    transition: 0.3s;
+    margin-right: 12px;
+}
+
+.social-links li a:hover {
+    background: transparent;
+    color: deepskyblue;
+}

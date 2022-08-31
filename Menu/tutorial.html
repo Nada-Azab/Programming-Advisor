@@ -1,0 +1,837 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="https://unpkg.com/webkul-micron@1.1.6/dist/css/micron.min.css" type="text/css" rel="stylesheet">
+    <script src="https://unpkg.com/webkul-micron@1.1.6/dist/script/micron.min.js" type="text/javascript"></script>
+    <!-- <script src="Script1.js"></script> -->
+    <style>
+        body {
+            font-family: montserrat, sans-serif;
+            background-color: rgb(173 193 212);
+        }
+
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        /* body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-family: "Lato", sans-serif;
+        } */
+        a {
+            text-decoration: none;
+            list-style: none;
+        }
+
+        /* NAV  */
+        nav {
+            display: flex;
+            background-color: rgb(24, 24, 25);
+            height: max-content;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            overflow: hidden;
+            margin-bottom: 50px;
+        }
+
+        .title {
+            color: aliceblue;
+            font-size: 35px;
+            line-height: 80px;
+            padding: 0 10px;
+            font-weight: bold;
+            margin-left: 70px;
+        }
+
+        .ul-list {
+            float: right;
+            margin-right: 80px;
+        }
+
+        .ul-list li {
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 10px;
+        }
+
+        a {
+            color: rgb(216, 207, 207);
+            font-size: 17px;
+            padding: 7px 13px;
+            border-radius: 3px;
+        }
+
+        a.active-link,
+        a.title-bar:hover {
+            background-color: rgb(56 56 59);
+            border-bottom: 2px solid rgb(199, 203, 206);
+            transition: 0.5s;
+        }
+
+        h2 {
+            margin: 20px;
+        }
+        /* Style the tab */
+        .tab {
+            float: left;
+            border: 1px solid #ccc;
+            background-color: rgb(173 193 212);
+            width: 30%;
+            height: 300px;
+            border-color: rgb(173 193 212);
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+            display: block;
+            background-color: rgb(173 193 212);
+            color: white;
+            padding: 22px 16px;
+            width: 100%;
+            border-color: rgb(173 193 212);
+            outline: none;
+            text-align: left;
+            cursor: pointer;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: rgb(61, 61, 61);
+            color: white;
+        }
+
+        /* Create an active/current "tab button" class */
+        .tab button.active {
+            background-color: rgb(24, 24, 25);
+            color: white;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+            float: left;
+            padding: 0px 12px;
+            border: 1px solid #ccc;
+            width: 70%;
+            border-left: none;
+            height: 300px;
+            border-color: rgb(173 193 212);
+        }
+
+        /*cards----------------*/
+        * {
+            box-sizing: border-box;
+        }
+
+        
+        /* Float four columns side by side */
+        .column {
+            float: left;
+            width: 25%;
+            padding: 0 10px;
+        }
+
+        /* Remove extra left and right margins, due to padding */
+        .row {
+            margin: 0 -5px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive columns */
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+                display: block;
+                margin-bottom: 20px;
+            }
+        }
+
+        /* Style the counter cards  height:280px;*/
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            width: 180px;
+
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+            background-color: rgb(173 193 212);
+        }
+
+        .card button {
+            border: none;
+            outline: 0;
+            padding: 12px;
+            color: white;
+            background-color: rgb(24, 24, 25);
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+
+        .card button:hover {
+            opacity: 0.7;
+            background-color: rgb(61, 61, 61);
+        }
+
+        .imgs {
+            width: 100%
+        }
+        .but {
+            background-color: rgb(182 210 228);
+            color: black;
+            font-size:large;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            width: 150px;
+            margin-left: 790px;
+            margin-top: 240px;
+            box-shadow: 0 0 10px rgb(20 91 159), 0 0 10px rgb(20 91 159), 0 0 20px rgb(20 91 159), 0 0 20px rgb(20 91 159), 0 0 10px rgb(20 91 159); 
+        }
+        .but:hover {
+                background-color: rgb(0 80 156);
+                color: white;
+            }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <label class="title"> CODING </label>
+        <ul class="ul-list">
+            <li>
+                <a class="title-bar" href="Menu.html"> Menu </a>
+            </li>
+            <li>
+                <a class="title-bar" href="courses.html"> Courses </a>
+            </li>
+            <li>
+                <a class="title-bar" href="teachers.html"> Live </a>
+            </li>
+            <li>
+                <a class="active-link" href="tutorial.html"> Tutorial</a>
+            </li>
+            <li>
+                <a class="title-bar" href="About.html"> About Us</a>
+            </li>
+            <li>
+                <a class="title-bar" href="home.html"> Logout </a>
+            </li>
+        </ul>
+    </nav>
+    <h2>Subjects</h2>
+    <div class="tab">
+        <button data-micron="jelly" data-micron-duration="1" class="tablinks"
+            onclick="openCity(event, 'Software Engnieering')" id="defaultOpen"> Software Engineering</button>
+        <button data-micron="jelly" data-micron-duration="1" class="tablinks"
+            onclick="openCity(event, 'Mobile Development')"> Mobile Development</button>
+        <button data-micron="jelly" data-micron-duration="1" class="tablinks"
+            onclick="openCity(event, 'Artificial Intelligence')">Artificial Intelligence</button>
+        <button data-micron="jelly" data-micron-duration="1" class="tablinks"
+            onclick="openCity(event, 'data science')">Data Science</button>
+        <button data-micron="jelly" data-micron-duration="1" class="tablinks"
+            onclick="openCity(event, 'Internet Of Things')">Internet Of Things</button>
+        <button data-micron="jelly" data-micron-duration="1" class="tablinks"
+            onclick="openCity(event, 'Cloud Computing')">Cloud Computing</button>
+        <button data-micron="jelly" data-micron-duration="1" class="tablinks"
+            onclick="openCity(event, 'Robotics')">Robotics</button>
+        <button data-micron="jelly" data-micron-duration="1" class="tablinks"
+            onclick="openCity(event, 'Industrial Automation')">Industrial Automation</button>
+        <button data-micron="jelly" data-micron-duration="1" class="tablinks"
+            onclick="openCity(event, 'Enterprise Business Computing')">Enterprise Business Computing</button>
+    </div>
+
+    <div id="Software Engnieering" class="tabcontent">
+        <h3>Software Engnieering</h3>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="next.jpeg" class="imgs">
+                    <h1>NEXT</h1>
+                    <p>
+                        The Adreses:Nasr City,Cairo <br />
+                        Phone:0223502130
+                    </p>
+                    <p><button data-micron="jelly" data-micron-duration=".8"
+                            onclick="window.location.href='https://www.google.com/maps/place/%D9%86%D9%83%D8%B3%D8%AA+%D8%A7%D9%83%D8%A7%D8%AF%D9%8A%D9%85%D9%89%E2%80%AD/@30.0632953,31.3610396,17z/data=!4m9!1m2!2m1!1z2YbZg9iz2Kog2KfZg9in2K_ZitmF2Yk!3m5!1s0x14583ddfd3190b8f:0x406c092fad1dabd3!8m2!3d30.0632951!4d31.356915!15sChfZhtmD2LPYqiDYp9mD2KfYr9mK2YXZiZIBG3NvZnR3YXJlX3RyYWluaW5nX2luc3RpdHV0ZQ'">Adresses
+                            on gog_map</button></p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="cls.jpeg" class="imgs">
+                    <h1>CLS</h1>
+                    <p>
+                        The Adreses:Dokki, Giza <br />
+                        Phone:0233370280
+                    <p>
+                        <button
+                            onclick="window.location.href='https://www.google.com/maps/place/CLS+Learning+Solutions/@30.0353756,31.3464596,12z/data=!4m9!1m2!2m1!1sCLS+Learning+Solutions!3m5!1s0x145846d554d2f12d:0xe2aaf339ff2fc00e!8m2!3d30.0353756!4d31.2146237!15sChZDTFMgTGVhcm5pbmcgU29sdXRpb25zIgOIAQGSAQ90cmFpbmluZ19jZW50ZXI'">Adresses
+                            on gog_map</button>
+                    </p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="yat.jpeg" class="imgs">
+                    <h1>YAT</h1>
+                    <p>
+                        The Adreses:Heliopolis, Cairo <br />
+                        Phone:02 24183457
+                    </p>
+                    <p><button
+                            onclick="window.location.href='https://www.google.com/maps/place/YAT+Learning+Centers+-+Heliopolis+%D9%85%D8%B1%D8%A7%D9%83%D8%B2+%D9%8A%D8%A7%D8%AA+%D9%84%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8+%E2%80%93+%D9%85%D8%B5%D8%B1+%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9%E2%80%AD/@30.0825656,31.3276447,17z/data=!3m1!4b1!4m5!3m4!1s0x14583e3e961707b5:0xaab881f034996ecd!8m2!3d30.0825861!4d31.3254416'">Adresses
+                            on gog_map</button></p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="itsharks.jpeg" class="imgs">
+                    <h1>ItSharks</h1>
+                    <p>
+                        The Adreses:Maadi, Cairo <br />
+                        Phone:0101 774 3315
+                    </p>
+                    <p><button
+                            onclick="window.location.href='https://www.google.com/maps/place/Itsharks/@29.9604147,31.255451,17z/data=!3m1!4b1!4m5!3m4!1s0x145847bc875403c5:0x66aeabf6a7306995!8m2!3d29.9604868!4d31.253363'">Adresses
+                            on gog_map</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Mobile Development" class="tabcontent">
+        <h3> Mobile Development</h3>
+        <div class="row">
+
+
+            <div class="column">
+                <div class="card">
+                    <img src="cls.jpeg" class="imgs">
+                    <h1>CLS</h1>
+                    <p>
+                        The Adreses:Dokki, Giza <br />
+                        Phone:0233370280
+                    <p>
+                        <button
+                            onclick="window.location.href='https://www.google.com/maps/place/CLS+Learning+Solutions/@30.0353756,31.3464596,12z/data=!4m9!1m2!2m1!1sCLS+Learning+Solutions!3m5!1s0x145846d554d2f12d:0xe2aaf339ff2fc00e!8m2!3d30.0353756!4d31.2146237!15sChZDTFMgTGVhcm5pbmcgU29sdXRpb25zIgOIAQGSAQ90cmFpbmluZ19jZW50ZXI'">Adresses
+                            on gog_map</button>
+                    </p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="yat.jpeg" class="imgs">
+                    <h1>YAT</h1>
+                    <p>
+                        The Adreses:Heliopolis, Cairo <br />
+                        Phone:02 24183457
+                    </p>
+                    <p><button
+                            onclick="window.location.href='https://www.google.com/maps/place/YAT+Learning+Centers+-+Heliopolis+%D9%85%D8%B1%D8%A7%D9%83%D8%B2+%D9%8A%D8%A7%D8%AA+%D9%84%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8+%E2%80%93+%D9%85%D8%B5%D8%B1+%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9%E2%80%AD/@30.0825656,31.3276447,17z/data=!3m1!4b1!4m5!3m4!1s0x14583e3e961707b5:0xaab881f034996ecd!8m2!3d30.0825861!4d31.3254416'">Adresses
+                            on gog_map</button></p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="itsharks.jpeg" class="imgs">
+                    <h1>ItSharks</h1>
+                    <p>
+                        The Adreses:Maadi, Cairo <br />
+                        Phone:0101 774 3315
+                    </p>
+                    <p><button
+                            onclick="window.location.href='https://www.google.com/maps/place/Itsharks/@29.9604147,31.255451,17z/data=!3m1!4b1!4m5!3m4!1s0x145847bc875403c5:0x66aeabf6a7306995!8m2!3d29.9604868!4d31.253363'">Adresses
+                            on gog_map</button></p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="next.jpeg" class="imgs">
+                    <h1>NEXT</h1>
+                    <p>
+                        The Adreses:Nasr City,Cairo <br />
+                        Phone:0223502130
+                    </p>
+                    <p><button
+                            onclick="window.location.href='https://www.google.com/maps/place/%D9%86%D9%83%D8%B3%D8%AA+%D8%A7%D9%83%D8%A7%D8%AF%D9%8A%D9%85%D9%89%E2%80%AD/@30.0632953,31.3610396,17z/data=!4m9!1m2!2m1!1z2YbZg9iz2Kog2KfZg9in2K_ZitmF2Yk!3m5!1s0x14583ddfd3190b8f:0x406c092fad1dabd3!8m2!3d30.0632951!4d31.356915!15sChfZhtmD2LPYqiDYp9mD2KfYr9mK2YXZiZIBG3NvZnR3YXJlX3RyYWluaW5nX2luc3RpdHV0ZQ'">Adresses
+                            on gog_map</button></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="Artificial Intelligence" class="tabcontent">
+        <h3>Artificial Intelligence</h3>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="yat.jpeg" class="imgs">
+                    <h1>YAT</h1>
+                    <p>
+                        The Adreses:Heliopolis, Cairo <br />
+                        Phone:02 24183457
+                    </p>
+                    <p><button
+                            onclick="window.location.href='https://www.google.com/maps/place/YAT+Learning+Centers+-+Heliopolis+%D9%85%D8%B1%D8%A7%D9%83%D8%B2+%D9%8A%D8%A7%D8%AA+%D9%84%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8+%E2%80%93+%D9%85%D8%B5%D8%B1+%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9%E2%80%AD/@30.0825656,31.3276447,17z/data=!3m1!4b1!4m5!3m4!1s0x14583e3e961707b5:0xaab881f034996ecd!8m2!3d30.0825861!4d31.3254416'">Adresses
+                            on gog_map</button></p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="next.jpeg" class="imgs">
+                    <h1>NEXT</h1>
+                    <p>
+                        The Adreses:Nasr City,Cairo <br />
+                        Phone:0223502130
+                    </p>
+                    <p><button
+                            onclick="window.location.href='https://www.google.com/maps/place/%D9%86%D9%83%D8%B3%D8%AA+%D8%A7%D9%83%D8%A7%D8%AF%D9%8A%D9%85%D9%89%E2%80%AD/@30.0632953,31.3610396,17z/data=!4m9!1m2!2m1!1z2YbZg9iz2Kog2KfZg9in2K_ZitmF2Yk!3m5!1s0x14583ddfd3190b8f:0x406c092fad1dabd3!8m2!3d30.0632951!4d31.356915!15sChfZhtmD2LPYqiDYp9mD2KfYr9mK2YXZiZIBG3NvZnR3YXJlX3RyYWluaW5nX2luc3RpdHV0ZQ'">Adresses
+                            on gog_map</button></p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="cls.jpeg" class="imgs">
+                    <h1>CLS</h1>
+                    <p>
+                        The Adreses:Dokki, Giza <br />
+                        Phone:0233370280
+                    <p>
+                        <button
+                            onclick="window.location.href='https://www.google.com/maps/place/CLS+Learning+Solutions/@30.0353756,31.3464596,12z/data=!4m9!1m2!2m1!1sCLS+Learning+Solutions!3m5!1s0x145846d554d2f12d:0xe2aaf339ff2fc00e!8m2!3d30.0353756!4d31.2146237!15sChZDTFMgTGVhcm5pbmcgU29sdXRpb25zIgOIAQGSAQ90cmFpbmluZ19jZW50ZXI'">Adresses
+                            on gog_map</button>
+                    </p>
+                    </p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="itsharks.jpeg" class="imgs">
+                    <h1>ItSharks</h1>
+                    <p>
+                        The Adreses:Maadi, Cairo <br />
+                        Phone:0101 774 3315
+                    </p>
+                    <p><button
+                            onclick="window.location.href='https://www.google.com/maps/place/Itsharks/@29.9604147,31.255451,17z/data=!3m1!4b1!4m5!3m4!1s0x145847bc875403c5:0x66aeabf6a7306995!8m2!3d29.9604868!4d31.253363'">Adresses
+                            on gog_map</button></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="data science" class="tabcontent">
+        <h3>Data Science</h3>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="yat.jpeg" class="imgs">
+                    <h1>YAT</h1>
+                    <p>
+                        The Adreses:Heliopolis, Cairo <br />
+                        Phone:02 24183457
+                    </p>
+                    <p><button
+                            onclick="window.location.href='https://www.google.com/maps/place/YAT+Learning+Centers+-+Heliopolis+%D9%85%D8%B1%D8%A7%D9%83%D8%B2+%D9%8A%D8%A7%D8%AA+%D9%84%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8+%E2%80%93+%D9%85%D8%B5%D8%B1+%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9%E2%80%AD/@30.0825656,31.3276447,17z/data=!3m1!4b1!4m5!3m4!1s0x14583e3e961707b5:0xaab881f034996ecd!8m2!3d30.0825861!4d31.3254416'">Adresses
+                            on gog_map</button></p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="next.jpeg" class="imgs">
+                    <h1>NEXT</h1>
+                    <p>
+                        The Adreses:Nasr City,Cairo <br />
+                        Phone:0223502130
+                    </p>
+                    <p><button
+                            onclick="window.location.href='https://www.google.com/maps/place/%D9%86%D9%83%D8%B3%D8%AA+%D8%A7%D9%83%D8%A7%D8%AF%D9%8A%D9%85%D9%89%E2%80%AD/@30.0632953,31.3610396,17z/data=!4m9!1m2!2m1!1z2YbZg9iz2Kog2KfZg9in2K_ZitmF2Yk!3m5!1s0x14583ddfd3190b8f:0x406c092fad1dabd3!8m2!3d30.0632951!4d31.356915!15sChfZhtmD2LPYqiDYp9mD2KfYr9mK2YXZiZIBG3NvZnR3YXJlX3RyYWluaW5nX2luc3RpdHV0ZQ'">Adresses
+                            on gog_map</button></p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="cls.jpeg" class="imgs">
+                    <h1>CLS</h1>
+                    <p>
+                        The Adreses:Dokki, Giza <br />
+                        Phone:0233370280
+                    <p>
+                        <button
+                            onclick="window.location.href='https://www.google.com/maps/place/CLS+Learning+Solutions/@30.0353756,31.3464596,12z/data=!4m9!1m2!2m1!1sCLS+Learning+Solutions!3m5!1s0x145846d554d2f12d:0xe2aaf339ff2fc00e!8m2!3d30.0353756!4d31.2146237!15sChZDTFMgTGVhcm5pbmcgU29sdXRpb25zIgOIAQGSAQ90cmFpbmluZ19jZW50ZXI'">Adresses
+                            on gog_map</button>
+                    </p>
+                    </p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="itsharks.jpeg" class="imgs">
+                    <h1>ItSharks</h1>
+                    <p>
+                        The Adreses:Maadi, Cairo <br />
+                        Phone:0101 774 3315
+                    </p>
+                    <p><button
+                            onclick="window.location.href='https://www.google.com/maps/place/Itsharks/@29.9604147,31.255451,17z/data=!3m1!4b1!4m5!3m4!1s0x145847bc875403c5:0x66aeabf6a7306995!8m2!3d29.9604868!4d31.253363'">Adresses
+                            on gog_map</button></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="Internet Of Things" class="tabcontent">
+        <h3>Internet Of Things</h3>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="yat.jpeg" class="imgs">
+                    <h1>YAT</h1>
+                    <p>
+                        The Adreses:Heliopolis, Cairo <br />
+                        Phone:02 24183457
+                    </p>
+                    <p><button
+                            onclick="window.location.href='https://www.google.com/maps/place/YAT+Learning+Centers+-+Heliopolis+%D9%85%D8%B1%D8%A7%D9%83%D8%B2+%D9%8A%D8%A7%D8%AA+%D9%84%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8+%E2%80%93+%D9%85%D8%B5%D8%B1+%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9%E2%80%AD/@30.0825656,31.3276447,17z/data=!3m1!4b1!4m5!3m4!1s0x14583e3e961707b5:0xaab881f034996ecd!8m2!3d30.0825861!4d31.3254416'">Adresses
+                            on gog_map</button></p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="next.jpeg" class="imgs">
+                    <h1>NEXT</h1>
+                    <p>
+                        The Adreses:Nasr City,Cairo <br />
+                        Phone:0223502130
+                    </p>
+                    <p><button
+                            onclick="window.location.href='https://www.google.com/maps/place/%D9%86%D9%83%D8%B3%D8%AA+%D8%A7%D9%83%D8%A7%D8%AF%D9%8A%D9%85%D9%89%E2%80%AD/@30.0632953,31.3610396,17z/data=!4m9!1m2!2m1!1z2YbZg9iz2Kog2KfZg9in2K_ZitmF2Yk!3m5!1s0x14583ddfd3190b8f:0x406c092fad1dabd3!8m2!3d30.0632951!4d31.356915!15sChfZhtmD2LPYqiDYp9mD2KfYr9mK2YXZiZIBG3NvZnR3YXJlX3RyYWluaW5nX2luc3RpdHV0ZQ'">Adresses
+                            on gog_map</button></p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="cls.jpeg" class="imgs">
+                    <h1>CLS</h1>
+                    <p>
+                        The Adreses:Dokki, Giza <br />
+                        Phone:0233370280
+                    <p>
+                        <button
+                            onclick="window.location.href='https://www.google.com/maps/place/CLS+Learning+Solutions/@30.0353756,31.3464596,12z/data=!4m9!1m2!2m1!1sCLS+Learning+Solutions!3m5!1s0x145846d554d2f12d:0xe2aaf339ff2fc00e!8m2!3d30.0353756!4d31.2146237!15sChZDTFMgTGVhcm5pbmcgU29sdXRpb25zIgOIAQGSAQ90cmFpbmluZ19jZW50ZXI'">Adresses
+                            on gog_map</button>
+                    </p>
+                    </p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="itsharks.jpeg" class="imgs">
+                    <h1>ItSharks</h1>
+                    <p>
+                        The Adreses:Maadi, Cairo <br />
+                        Phone:0101 774 3315
+                    </p>
+                    <p><button
+                            onclick="window.location.href='https://www.google.com/maps/place/Itsharks/@29.9604147,31.255451,17z/data=!3m1!4b1!4m5!3m4!1s0x145847bc875403c5:0x66aeabf6a7306995!8m2!3d29.9604868!4d31.253363'">Adresses
+                            on gog_map</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Cloud Computing" class="tabcontent">
+        <h3>Cloud Computing</h3>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="yat.jpeg" class="imgs">
+                    <h1>YAT</h1>
+                    <p>
+                        The Adreses:Heliopolis, Cairo <br />
+                        Phone:02 24183457
+                    </p>
+                    <p><button
+                            onclick="window.location.href='https://www.google.com/maps/place/YAT+Learning+Centers+-+Heliopolis+%D9%85%D8%B1%D8%A7%D9%83%D8%B2+%D9%8A%D8%A7%D8%AA+%D9%84%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8+%E2%80%93+%D9%85%D8%B5%D8%B1+%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9%E2%80%AD/@30.0825656,31.3276447,17z/data=!3m1!4b1!4m5!3m4!1s0x14583e3e961707b5:0xaab881f034996ecd!8m2!3d30.0825861!4d31.3254416'">Adresses
+                            on gog_map</button></p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="next.jpeg" class="imgs">
+                    <h1>NEXT</h1>
+                    <p>
+                        The Adreses:Nasr City,Cairo <br />
+                        Phone:0223502130
+                    </p>
+                    <p><button
+                            onclick="window.location.href='https://www.google.com/maps/place/%D9%86%D9%83%D8%B3%D8%AA+%D8%A7%D9%83%D8%A7%D8%AF%D9%8A%D9%85%D9%89%E2%80%AD/@30.0632953,31.3610396,17z/data=!4m9!1m2!2m1!1z2YbZg9iz2Kog2KfZg9in2K_ZitmF2Yk!3m5!1s0x14583ddfd3190b8f:0x406c092fad1dabd3!8m2!3d30.0632951!4d31.356915!15sChfZhtmD2LPYqiDYp9mD2KfYr9mK2YXZiZIBG3NvZnR3YXJlX3RyYWluaW5nX2luc3RpdHV0ZQ'">Adresses
+                            on gog_map</button></p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="cls.jpeg" class="imgs">
+                    <h1>CLS</h1>
+                    <p>
+                        The Adreses:Dokki, Giza <br />
+                        Phone:0233370280
+                    <p>
+                        <button
+                            onclick="window.location.href='https://www.google.com/maps/place/CLS+Learning+Solutions/@30.0353756,31.3464596,12z/data=!4m9!1m2!2m1!1sCLS+Learning+Solutions!3m5!1s0x145846d554d2f12d:0xe2aaf339ff2fc00e!8m2!3d30.0353756!4d31.2146237!15sChZDTFMgTGVhcm5pbmcgU29sdXRpb25zIgOIAQGSAQ90cmFpbmluZ19jZW50ZXI'">Adresses
+                            on gog_map</button>
+                    </p>
+                    </p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="itsharks.jpeg" class="imgs">
+                    <h1>ItSharks</h1>
+                    <p>
+                        The Adreses:Maadi, Cairo <br />
+                        Phone:0101 774 3315
+                    </p>
+                    <p><button
+                            onclick="window.location.href='https://www.google.com/maps/place/Itsharks/@29.9604147,31.255451,17z/data=!3m1!4b1!4m5!3m4!1s0x145847bc875403c5:0x66aeabf6a7306995!8m2!3d29.9604868!4d31.253363'">Adresses
+                            on gog_map</button></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="Robotics" class="tabcontent">
+        <h3>Robotics</h3>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="yat.jpeg" class="imgs">
+                    <h1>YAT</h1>
+                    <p>
+                        The Adreses:Heliopolis, Cairo <br />
+                        Phone:02 24183457
+                    </p>
+                    <p><button
+                            onclick="window.location.href='https://www.google.com/maps/place/YAT+Learning+Centers+-+Heliopolis+%D9%85%D8%B1%D8%A7%D9%83%D8%B2+%D9%8A%D8%A7%D8%AA+%D9%84%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8+%E2%80%93+%D9%85%D8%B5%D8%B1+%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9%E2%80%AD/@30.0825656,31.3276447,17z/data=!3m1!4b1!4m5!3m4!1s0x14583e3e961707b5:0xaab881f034996ecd!8m2!3d30.0825861!4d31.3254416'">Adresses
+                            on gog_map</button></p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="next.jpeg" class="imgs">
+                    <h1>NEXT</h1>
+                    <p>
+                        The Adreses:Nasr City,Cairo <br />
+                        Phone:0223502130
+                    </p>
+                    <p><button
+                            onclick="window.location.href='https://www.google.com/maps/place/%D9%86%D9%83%D8%B3%D8%AA+%D8%A7%D9%83%D8%A7%D8%AF%D9%8A%D9%85%D9%89%E2%80%AD/@30.0632953,31.3610396,17z/data=!4m9!1m2!2m1!1z2YbZg9iz2Kog2KfZg9in2K_ZitmF2Yk!3m5!1s0x14583ddfd3190b8f:0x406c092fad1dabd3!8m2!3d30.0632951!4d31.356915!15sChfZhtmD2LPYqiDYp9mD2KfYr9mK2YXZiZIBG3NvZnR3YXJlX3RyYWluaW5nX2luc3RpdHV0ZQ'">Adresses
+                            on gog_map</button></p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="cls.jpeg" class="imgs">
+                    <h1>CLS</h1>
+                    <p>
+                        The Adreses:Dokki, Giza <br />
+                        Phone:0233370280
+                    <p>
+                        <button
+                            onclick="window.location.href='https://www.google.com/maps/place/CLS+Learning+Solutions/@30.0353756,31.3464596,12z/data=!4m9!1m2!2m1!1sCLS+Learning+Solutions!3m5!1s0x145846d554d2f12d:0xe2aaf339ff2fc00e!8m2!3d30.0353756!4d31.2146237!15sChZDTFMgTGVhcm5pbmcgU29sdXRpb25zIgOIAQGSAQ90cmFpbmluZ19jZW50ZXI'">Adresses
+                            on gog_map</button>
+                    </p>
+                    </p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="itsharks.jpeg" class="imgs">
+                    <h1>ItSharks</h1>
+                    <p>
+                        The Adreses:Maadi, Cairo <br />
+                        Phone:0101 774 3315
+                    </p>
+                    <p><button
+                            onclick="window.location.href='https://www.google.com/maps/place/Itsharks/@29.9604147,31.255451,17z/data=!3m1!4b1!4m5!3m4!1s0x145847bc875403c5:0x66aeabf6a7306995!8m2!3d29.9604868!4d31.253363'">Adresses
+                            on gog_map</button></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="Industrial Automation" class="tabcontent">
+        <h3>Industrial Automation</h3>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="yat.jpeg" class="imgs">
+                    <h1>YAT</h1>
+                    <p>
+                        The Adreses:Heliopolis, Cairo <br />
+                        Phone:02 24183457
+                    </p>
+                    <p><button
+                            onclick="window.location.href='https://www.google.com/maps/place/YAT+Learning+Centers+-+Heliopolis+%D9%85%D8%B1%D8%A7%D9%83%D8%B2+%D9%8A%D8%A7%D8%AA+%D9%84%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8+%E2%80%93+%D9%85%D8%B5%D8%B1+%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9%E2%80%AD/@30.0825656,31.3276447,17z/data=!3m1!4b1!4m5!3m4!1s0x14583e3e961707b5:0xaab881f034996ecd!8m2!3d30.0825861!4d31.3254416'">Adresses
+                            on gog_map</button></p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="next.jpeg" class="imgs">
+                    <h1>NEXT</h1>
+                    <p>
+                        The Adreses:Nasr City,Cairo <br />
+                        Phone:0223502130
+                    </p>
+                    <p><button
+                            onclick="window.location.href='https://www.google.com/maps/place/%D9%86%D9%83%D8%B3%D8%AA+%D8%A7%D9%83%D8%A7%D8%AF%D9%8A%D9%85%D9%89%E2%80%AD/@30.0632953,31.3610396,17z/data=!4m9!1m2!2m1!1z2YbZg9iz2Kog2KfZg9in2K_ZitmF2Yk!3m5!1s0x14583ddfd3190b8f:0x406c092fad1dabd3!8m2!3d30.0632951!4d31.356915!15sChfZhtmD2LPYqiDYp9mD2KfYr9mK2YXZiZIBG3NvZnR3YXJlX3RyYWluaW5nX2luc3RpdHV0ZQ'">Adresses
+                            on gog_map</button></p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="itsharks.jpeg" class="imgs">
+                    <h1>ItSharks</h1>
+                    <p>
+                        The Adreses:Maadi, Cairo <br />
+                        Phone:0101 774 3315
+                    </p>
+                    <p><button
+                            onclick="window.location.href='https://www.google.com/maps/place/Itsharks/@29.9604147,31.255451,17z/data=!3m1!4b1!4m5!3m4!1s0x145847bc875403c5:0x66aeabf6a7306995!8m2!3d29.9604868!4d31.253363'">Adresses
+                            on gog_map</button></p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="cls.jpeg" class="imgs">
+                    <h1>CLS</h1>
+                    <p>
+                        The Adreses:Dokki, Giza <br />
+                        Phone:0233370280
+                    <p>
+                        <button
+                            onclick="window.location.href='https://www.google.com/maps/place/CLS+Learning+Solutions/@30.0353756,31.3464596,12z/data=!4m9!1m2!2m1!1sCLS+Learning+Solutions!3m5!1s0x145846d554d2f12d:0xe2aaf339ff2fc00e!8m2!3d30.0353756!4d31.2146237!15sChZDTFMgTGVhcm5pbmcgU29sdXRpb25zIgOIAQGSAQ90cmFpbmluZ19jZW50ZXI'">Adresses
+                            on gog_map</button>
+                    </p>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="Enterprise Business Computing" class="tabcontent">
+        <h3>Enterprise Business Computing</h3>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="yat.jpeg" class="imgs">
+                    <h1>YAT</h1>
+                    <p>
+                        The Adreses:Heliopolis, Cairo <br />
+                        Phone:02 24183457
+                    </p>
+                    <p><button
+                            onclick="window.location.href='https://www.google.com/maps/place/YAT+Learning+Centers+-+Heliopolis+%D9%85%D8%B1%D8%A7%D9%83%D8%B2+%D9%8A%D8%A7%D8%AA+%D9%84%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8+%E2%80%93+%D9%85%D8%B5%D8%B1+%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9%E2%80%AD/@30.0825656,31.3276447,17z/data=!3m1!4b1!4m5!3m4!1s0x14583e3e961707b5:0xaab881f034996ecd!8m2!3d30.0825861!4d31.3254416'">Adresses
+                            on gog_map</button></p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="next.jpeg" class="imgs">
+                    <h1>NEXT</h1>
+                    <p>
+                        The Adreses:Nasr City,Cairo <br />
+                        Phone:0223502130
+                    </p>
+                    <p><button
+                            onclick="window.location.href='https://www.google.com/maps/place/%D9%86%D9%83%D8%B3%D8%AA+%D8%A7%D9%83%D8%A7%D8%AF%D9%8A%D9%85%D9%89%E2%80%AD/@30.0632953,31.3610396,17z/data=!4m9!1m2!2m1!1z2YbZg9iz2Kog2KfZg9in2K_ZitmF2Yk!3m5!1s0x14583ddfd3190b8f:0x406c092fad1dabd3!8m2!3d30.0632951!4d31.356915!15sChfZhtmD2LPYqiDYp9mD2KfYr9mK2YXZiZIBG3NvZnR3YXJlX3RyYWluaW5nX2luc3RpdHV0ZQ'">Adresses
+                            on gog_map</button></p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="cls.jpeg" class="imgs">
+                    <h1>CLS</h1>
+                    <p>
+                        The Adreses:Dokki, Giza <br />
+                        Phone:0233370280
+                    <p>
+                        <button
+                            onclick="window.location.href='https://www.google.com/maps/place/CLS+Learning+Solutions/@30.0353756,31.3464596,12z/data=!4m9!1m2!2m1!1sCLS+Learning+Solutions!3m5!1s0x145846d554d2f12d:0xe2aaf339ff2fc00e!8m2!3d30.0353756!4d31.2146237!15sChZDTFMgTGVhcm5pbmcgU29sdXRpb25zIgOIAQGSAQ90cmFpbmluZ19jZW50ZXI'">Adresses
+                            on gog_map</button>
+                    </p>
+                    </p>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="itsharks.jpeg" class="imgs">
+                    <h1>ItSharks</h1>
+                    <p>
+                        The Adreses:Maadi, Cairo <br />
+                        Phone:0101 774 3315
+                    </p>
+                    <p><button
+                            onclick="window.location.href='https://www.google.com/maps/place/Itsharks/@29.9604147,31.255451,17z/data=!3m1!4b1!4m5!3m4!1s0x145847bc875403c5:0x66aeabf6a7306995!8m2!3d29.9604868!4d31.253363'">Adresses
+                            on gog_map</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="but" onclick="window.location.href = 'form-center.html'" >Reservation</button>
+    <script>
+        function openCity(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
+
+</html>

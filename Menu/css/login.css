@@ -1,0 +1,169 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: montserrat, sans-serif;
+    background-color: rgb(173, 193, 212);
+    color: #0a0a0a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* overflow: hidden; */
+    margin: 10px;
+}
+ul li a{
+    text-decoration: none;
+    list-style: none;
+    color: rgb(216, 207, 207);
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+        /* NAV  */
+nav {
+    background-color: rgb(24, 24, 25);
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+#icon-bar {
+    width:4%;
+    height: 25px;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 25px;
+    margin-left: 50px ;
+}
+.title{
+    color:aliceblue;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+.ul-list {
+    float: right;
+    margin-right: 80px;
+}
+
+.ul-list li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 10px;
+}
+
+a.active-link,a.title-bar:hover{
+    background-color: rgb(56 56 59);
+    border-bottom: 2px solid rgb(199, 203, 206);
+    transition: 0.5s;
+}
+/*           */
+
+
+#regis {
+    display: none;
+    margin-top: 210px;
+}
+
+#log,
+#regis {
+    background-color: rgba(248, 255, 254, 0.92);
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+#log h1,
+#regis h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.form-control label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+}
+
+
+.form-control {
+    position: relative;
+    margin: 20px 0 40px;
+    width: 300px;
+}
+
+.form-control input:focus {
+    outline: 0;
+    border-bottom-color: rgb(15, 27, 36);
+}
+
+.form-control input {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: 0;
+    border-bottom: 2px solid rgb(140, 174, 198);
+    display: block;
+    width: 100%;
+    padding: 15px 0 10px 0;
+    font-size: 18px;
+}
+
+.btn {
+    background-color:  rgb(24, 24, 25);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(229, 225, 225);
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color:rgb(56, 56, 59);
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.text {
+    margin-top: 30px;
+}
+
+.text a {
+    text-decoration: none;
+    color:rgb(82, 142, 185);
+}
+
+.form-control label:hover {
+    cursor: text;
+}
+
+.form-control label span {
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    transition: 0.3s linear;
+    /* Animation */
+}
+
+.form-control input:focus+label span,
+.form-control input:valid+label span {
+    /* valid  
+    يعني كتبت جوه input
+    فأصبحت 
+    valid */
+    color: rgb(82, 142, 185);
+    transform: translateY(-30px);
+}

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" href="css/style.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <style>*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ballo 2" cursive;
+
+  
+}
+body{
+    background-color:  rgb(4, 4, 38);
+}
+
+
+
+.apply{
+    position: relative;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 450px;
+}
+.apply p{
+    color:white;
+    font-size: 5em;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-shadow: 0 0 10px deepskyblue,
+                 0 0 20px  deepskyblue,
+                 0 0 40px deepskyblue,
+                 0 0 80px deepskyblue,
+                 0 0 120px deepskyblue;
+                 
+
+}
+.lightbar2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px ;
+    height: 100%;
+    border-radius: 10px;
+    z-index: 2;
+    background-color:aliceblue;
+    box-shadow: 0 0 10px deepskyblue,
+                0 0 20px deepskyblue, 
+                0 0 40px deepskyblue,
+                0 0 80px deepskyblue,
+                0 0 120px deepskyblue;
+    animation: animatelightbar2 5s linear infinite;
+
+}
+@keyframes animatelightbar2
+{
+    0%, 5%
+    {
+       transform: scaleY(0)  translateX(0);
+    }
+    10%
+    {
+       transform: scaleY(1)  translateX(0);
+    }
+   90%
+    {
+       transform: scaleY(1)  translateX(calc(600px - 10px));
+    }
+    95%,100%
+    {
+       transform: scaleY(0)  translateX(calc(600px - 10px));
+    }
+}
+.toplayer2
+{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color:rgb(4, 4, 38);
+animation: animatetoplayer2 10s linear infinite;
+
+}
+@keyframes animatetoplayer2
+{
+    0%, 2.5%
+    {
+       transform: translateX(0);
+    }
+    5%
+    {
+       transform: translateX(0);
+    }
+   45%
+    {
+       transform: translateX(100%);
+    }
+    47.5%,50%
+    {
+       transform: translateX(100%);
+    }
+    50.001%, 52.5%
+    {
+       transform: translateX(-100%);
+    }
+    55%
+    {
+       transform: translateX(-100%);
+    }
+   95%
+    {
+       transform: translateX(0);
+    }
+    95.5%,100%
+    {
+       transform: translateX(0);
+    }
+
+}
+
+   input[type=text], select  ,input[type=email] {
+     width: 100%;
+     padding: 12px;
+     border: 1px solid deepskyblue;
+     border-radius: 25px;
+     box-sizing: border-box;
+     margin-top: 6px;
+     margin-bottom: 16px;
+     resize: vertical;
+     background-color:rgb(4, 4, 38);
+     font-size: larger;
+     box-shadow: 0 0 2px deepskyblue,
+    0 0 5px deepskyblue, 
+    0 0 10px deepskyblue,
+    0 0 15px deepskyblue,
+    0 0 20px deepskyblue;
+    
+   }
+   
+   input[type=text]:focus, select:focus,input[type=email]:focus {
+   
+   background-color: rgb(139, 185, 226);
+    height: 50px;
+    width: 600px;
+
+   }
+
+   input[type=submit] {
+     background-color: rgb(4, 4, 38);
+     color: white;
+     padding: 12px 20px;
+     border: none;
+     border-radius: 25px;
+     cursor: pointer;
+     width: 150px;
+     margin-left: 200px;
+     box-shadow: 0 0 10px rgb(14, 219, 130),
+     0 0 10px rgb(14, 219, 130),
+     0 0 20px rgb(14, 219, 130),
+     0 0 20px rgb(14, 219, 130),
+     0 0 10px rgb(14, 219, 130);
+   }
+   
+   input[type=submit]:hover {
+     background-color: #45a049;
+     height: 50px;
+   }
+   
+   .container {
+     border-radius: 5px;
+     background-color:rgb(4, 4, 38);
+     padding: 20px;
+     align-self: center;
+     width: 600px;
+     margin-left: 450px;
+   }
+   label{
+    color: deepskyblue;
+    font-size: x-large;
+    
+   }
+
+
+  /* foooooteeeer */
+   footer{
+    background-image: url(https://www.softwarepursuits.com/content/uploads/suresync-suite-background.jpg) ;
+    color: white;
+   align-items: center;
+    align-content: flex-start;
+}
+h4{
+    font-size: 50px;
+    color: deepskyblue;
+
+}
+.mero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    
+
+
+}
+.colomn{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 70px 18px;
+}
+.logo{
+   margin-left: 10px;
+    letter-spacing: 1px;
+    margin: 12px;
+    font-size: 10px;
+    font-family: "potta 1",cursive;
+    text-shadow: 0 5px 6px rgb(49, 108, 128);
+    color: rgb(229, 238, 241);
+}
+.colomn h5{
+    font-size: 20px;
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 8px;
+    color: deepskyblue;
+    text-shadow:  0 0 12px rgb(5, 46, 45);
+}
+.colomn h5::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 60%;
+    background-color: deepskyblue;
+}
+.footer-links li{
+    margin: 12px 0;
+    list-style:none;
+
+}
+
+.footer-links li a{
+    text-decoration: none;
+    color: azure;
+    transition: 0.3s;
+}
+.footer-links li a:hover{
+    color:aqua;
+    text-shadow: 0 0 12px;
+}
+.contact-details li {
+    list-style: none;
+    align-items: center;
+    display: flex;
+    margin: 12px 0;
+    color: aqua;
+
+}
+.contact-details li i  {
+    height: 25px;
+    width:20px;
+    border: 3px solid deepskyblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:rgb(232, 233, 233);
+     transition: 0.3s;
+     margin-right:12px ; 
+}
+.contact-details li i:hover  ,.contact-details li span:hover{
+   
+   color: deepskyblue;
+   text-shadow: 0 0 12px;
+
+    
+}
+.social-links{
+    display: flex;
+    list-style: none;
+}
+.social-links li{
+    margin-right: 12px;
+}
+.social-links li a{
+    height: 25px;
+    width:20px;
+    border: 3px solid deepskyblue;
+    background-color:deepskyblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:rgb(238, 249, 249);
+    text-decoration: none;
+     transition: 0.3s;
+     margin-right:12px ; 
+
+}
+.social-links li a:hover{
+    background: transparent;
+    color: deepskyblue;
+}
+</style>
+</head>
+<body>
+    <div class="apply">
+        <div class="lightbar2"></div>
+        <div class="toplayer2"></div>
+        <p> Apply Now</p>
+       </div>
+     
+       
+
+<div class="container">
+  <form >
+    <label  >First Name</label>
+    <input type="text" placeholder="your first name.."  required>
+    <label >Last Name</label>
+    <input type="text"  placeholder="your last name.." required>
+    <label>Email</label>
+    <input type="email"  placeholder="your email" required> 
+    <label>your mobile</label>
+    <input type="text" placeholder="your mobile" required>
+    <label >your last education</label>
+    <select  class="education">
+      <option >high schoole</option>
+      <option >study at university</option>
+      <option >graduated</option>
+    </select>
+    <label >choose field</label>
+    <select  class="fields">
+          <option >Software Engineering</option>
+          <option >Mobile Development</option>
+          <option >Artificial Intelligence</option>
+          <option > Data Science</option>
+          <option > Internet Of Things(IOS)</option>
+          <option >Cloud Computing</option>
+          <option > Robotics</option>
+          <option >Industrial Automation</option>
+          <option >Enterprise Business Computin</option>  
+    </select>
+    <label >choose Center</label>
+    <select  class="center">
+          <option >NEXT</option>
+          <option >CLS</option>
+          <option >YAT</option>
+          <option > ETC</option> 
+    </select>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+<footer class="mero">
+    <div class="logo"> 
+        <h4>ABOUT US</h4>
+        <p class="prag">
+            We help you to be your journy of learnning programing easier.
+            <br>
+            So,we do our best to help you .
+            <br>
+            <br>
+            Thank you for your trust.
+        </p>
+        </div>
+    <div class="colomn"> 
+        <h5>GET In Touch</h5>
+        <ul class="contact-details">
+           <li>
+            <i class="fa-solid fa-phone-volume"></i>
+            <span>012852025865</span>
+
+           </li>
+           <li> 
+               <i class="fa-solid fa-envelope"></i>
+               <span>programing312@gmail.com</span>
+           </li>
+           <li> 
+               <i class="fa-solid fa-location-dot"></i>
+               <span>13 El-Mansora streat</span>
+           </li>
+        </ul> 
+        <ul class="social-links">
+            <li> 
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+             
+           </li>
+           <li>
+                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                
+           </li>
+           <li>
+            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+           </li>
+        </ul>
+        
+        </ul>
+
+   </div>
+
+    <div class="colomn"> 
+        <h5>Quick links</h5>
+        <ul class="footer-links">
+            <li>
+                <a href="#"> Home</a>
+            </li>
+            <li>
+                <a href="#"> about us</a>
+            </li>
+            <li>
+                <a href="#"> our services</a>
+            </li>
+            <li>
+                <a href="#"> contact us</a>
+            </li>
+        </ul>
+    </div>
+    <div class="colomn">
+        <h5>Our courses</h5>
+        <ul class="footer-links">
+            <li>
+                <a href="#">web development</a>
+            </li>
+            <li>
+                <a href="#"> app development</a>
+            </li>
+            <li>
+                <a href="#"> AI</a>
+            </li>
+            <li>
+                <a href="#"> SEO services</a>
+            </li>
+        </ul>
+         </div>
+   
+    </footer>
+
+</body>
+
+</html>
+

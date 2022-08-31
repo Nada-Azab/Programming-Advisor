@@ -1,0 +1,88 @@
+<html>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Reservation</title>
+        <link rel="stylesheet" href="css/live.css">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <label class="title"> CODING </label>
+                <ul class="ul-list">
+                    <li>
+                        <a class="title-bar" href="Menu.html"> Menu </a>
+                    </li>
+                    <li>
+                        <a class="title-bar" href="courses.html"> Courses </a>
+                    </li>
+                    <li>
+                        <a class="active-link" href="teachers.html"> Live </a>
+                    </li>
+                    <li>
+                        <a class="title-bar" href="tutorial.html"> Tutorial</a>
+                    </li>
+                    <li>
+                        <a class="title-bar" href="About.html"> About Us</a>
+                    </li>
+                    <li>
+                        <a class="title-bar" href="home.html"> Logout </a>
+                    </li>
+                </ul>
+
+            </nav>
+        </header>
+
+        <div id="reserve">
+            <h1>Reservation</h1>
+            <div class="form">
+                <div class="form-control">
+                    <input type="text" name="name" id="name" required>
+                    <label for="name">Name</label>
+                </div>
+
+                <div class="form-control">
+                    <input type="text" pattern="[0-9]{11}" title="This isn't a phone number" name="phone" id="phone"
+                        required>
+                    <label for="phone">Your Phone Number</label>
+                </div>
+
+                <div class="form-control">
+                    <input type="email" name="email" id="email" required>
+                    <label for="email">E-mail</label>
+                </div>
+
+                <div class="form-control">
+                    <input type="text" pattern="[0-9]{11}" title="write 16 number" id="card" name="card" required>
+                    <label for="card">Credit Card Number </label>
+                </div>
+
+                <div class="hours">
+                    <label>Number Of Hours </label>
+                    <input type="number" name="hours" value="4" min="2" max="20" step="2">
+                </div>
+
+                <label>language </label><br>
+                <select name="lang">
+                    <optgroup label="language">
+                        <option value="c++">c++</option>
+                        <option value="java">java</option>
+                        <option value="c#">c#</option>
+                        <option value="python">python</option>
+                        <option value="cs50">cs50</option>
+                        <option value="lisp">lisp</option>
+                        <option value="prolog">prolog</option>
+                        <option value="fortran">fortran</option>
+                        <option value="css">css</option>
+                    </optgroup>
+                </select>
+                <button class="btn" id="submitData">Submit</button>
+            </div>
+        </div>
+
+
+        <script src="javascript/live.js"></script>
+    </body>
+
+</html>

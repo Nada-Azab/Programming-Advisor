@@ -1,0 +1,166 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: montserrat, sans-serif;
+    background-color: rgb(173, 193, 212);
+    color: #0a0a0a;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow-x: hidden;
+    /* margin: 10px; */
+}
+/* NAV  */
+nav {
+    background-color: rgb(24, 24, 25);
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.title{
+    color:aliceblue;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 10px;
+    font-weight: bold;
+    margin-left: 70px;
+}
+
+.ul-list {
+    float: right;
+    margin-right: 80px;
+}
+
+.ul-list li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 10px;
+}
+
+ul li a{
+    text-decoration: none;
+    list-style: none;
+    color: rgb(216, 207, 207);
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+a.active-link,a.title-bar:hover{
+    background-color: rgb(56 56 59);
+    border-bottom: 2px solid rgb(199, 203, 206);
+    transition: 0.5s;
+}
+
+#reserve {
+    background-color: rgb(255, 248, 248, 92%);
+    width: 30%;
+    margin: 100px 0 20px 100px;
+    padding: 20px 40px;
+    border-radius: 10px;
+}
+
+#reserve h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+
+.form-control label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+}
+
+/* عشان top بتاع
+label 
+يبقي top
+input */
+.form-control {
+    position: relative;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.form-control input:focus {
+    outline: 0;
+    border-bottom-color: rgb(2, 2, 2);
+}
+
+.form-control input {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: 0;
+    border-bottom: 2px solid rgb(111, 111, 114);
+    /* display: block; */
+    width: 100%;
+    padding: 13px 0 10px 0;
+    font-size: 18px;
+}
+
+.btn {
+    background-color: rgb(42, 42, 43);
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(247, 242, 242);
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: rgb(111, 111, 114);
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.form-control label:hover {
+    cursor: text;
+}
+
+.form-control label span {
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    transition: 0.3s linear;
+    /* Animation */
+}
+
+.form-control input:focus+label span,
+.form-control input:valid+label span {
+    /* valid  
+    يعني كتبت جوه input
+    فأصبحت 
+    valid */
+    color: rgb(101, 151, 197);
+    transform: translateY(-20px);
+}
+
+.hours {
+    padding-bottom: 7px;
+    border-bottom: 2px rgb(111, 111, 114) solid;
+    margin-bottom: 4px;
+    margin-top: 15px;
+
+}
+
+select {
+    padding-bottom: 7px;
+    border-bottom: 2px black solid;
+    margin-bottom: 14px;
+}

@@ -1,0 +1,138 @@
+a.learn:visited {
+    color: darkslateblue;
+}
+
+a.learn:hover {
+    color: rgb(0, 170, 255);
+
+}
+
+a.learn:active {
+    color: rgb(213, 206, 221);
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(173, 193, 212);
+}
+a{
+    text-decoration: none;
+    list-style: none;
+}
+
+        /* NAV  */
+nav {
+    display: flex;
+    background-color: rgb(24, 24, 25);
+    height: max-content;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+#search-list {
+    margin-top: 100px;
+}
+
+.title{
+    color:aliceblue;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 10px;
+    font-weight: bold;
+    margin-left: 70px;
+}
+
+.ul-list {
+    float: right;
+    margin-right: 80px;
+}
+
+.ul-list li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 10px;
+}
+
+a.active-link,a.title-bar{
+    color: rgb(216, 207, 207);
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+a.active-link,a.title-bar:hover{
+    background-color: rgb(56 56 59);
+    border-bottom: 2px solid rgb(199, 203, 206);
+    transition: 0.5s;
+}
+
+    /* search  */
+    .search{
+        background-color: white;
+        margin: 30px 0 30px 500px;
+        border-radius: 10px;
+        border:0.2px solid gray;
+        width:340px;
+        overflow: hidden;
+    }
+    #search-button {
+        border:none;
+        cursor: pointer;
+        background-color: white;
+    }
+    .search-img{
+        width:20px;
+        height:30px;
+        color:rgb(57, 4, 27);
+        margin-right: 7px;
+        vertical-align: middle;
+    }
+    .search-input {
+    height: 30px;
+    margin-left: 5px;
+    border:none;
+    text-align: center;
+    width:50px;
+    transition: width 0.5s;
+    }
+    .search-input:hover{
+        width: 300px;
+    }
+
+    #search-list {
+        background-color: aliceblue;
+        margin: 30px;
+        /* text-align: center; */
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+        gap: 15px;
+        justify-content: space-between;
+        direction: ltr;
+    }
+    .items {
+        display: flex;
+        /* align-items: center; */
+        justify-content: space-between;
+        background-color: white;
+        width: 100%;
+        height: 100%;
+    }
+    table {
+        border: 3px solid rgb(130, 125, 125);
+        width:350px;
+        direction: ltr;
+    }
+    thead tr th {
+        text-align: left;
+    }
+    table tbody tr td { 
+        margin: auto;
+    }
+

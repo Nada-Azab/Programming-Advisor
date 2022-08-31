@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- <meta name="description" content="project" /> -->
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <style>* {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ballo 2" cursive;
+
+  
+}
+
+        body {
+            font-family: montserrat, sans-serif;
+             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+            width: 100%;
+            background-color: rgb(173 193 212);
+             overflow-x:hidden ; 
+        }
+         
+        
+        /* NAV  */
+        nav {
+            background-color: rgb(38, 138, 205);
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 2px;
+        }
+        
+        .title {
+            color: aliceblue;
+            font-size: 35px;
+            line-height: 80px;
+            font-weight: bold;
+            margin-right: 650px;
+        }
+        
+        .ul-list {
+            float: right;
+            margin-right: 80px;
+        }
+        
+        .ul-list li {
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+        }
+        
+        a.bar-link {
+            text-decoration: none;
+            list-style-type: none;
+            color: rgb(216, 207, 207);
+            font-size: 17px;
+            padding: 7px 13px;
+            border-radius: 3px;
+        
+        }
+        
+        a.bar-link:hover,
+        a.active-link {
+            background-color: rgb(56 56 59);
+            border-bottom: 2px solid rgb(199, 203, 206);
+            transition: 0.5s linear;
+        }
+        
+        .img-bg {
+            background-image: linear-gradient(rgba(90, 100, 159, 0.705),rgba(63, 73, 127, 0.655)), url("../../sourses/applications-of-computer-programming.webp") ;
+            height: 600px;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position: center;
+            margin-bottom: 50px;
+        }
+        #icon-bar {
+            width:5%;
+            height: 30px;
+            object-fit: cover;
+            object-position: center center;
+            border-radius: 20px;
+            margin-left: 35px ;
+        }
+        
+        #img-title {
+            width:20%;
+            height: 150px;
+            object-fit: cover;
+            object-position: center center;
+            border-radius: 50px;
+            margin-left: 500px;
+            margin-top: 200px;
+        }
+        
+        
+       
+        .sticky {
+            position: fixed;
+            top:0;
+            width: 100%;
+        }
+        .sticky + .content{
+            padding-top: 45px;
+        }
+        
+        .row {
+            align-items: center;
+            justify-content: space-between 0px;
+            inline-size: 0.5px;
+        }
+        
+        .content img{
+            margin-top: 45px;
+            margin-right: 30px;
+        }
+        
+        section {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin-bottom: 50px;
+        }
+        section p {
+            font-size: xx-large;
+            color: deepskyblue;
+            text-shadow: 0 7px 12px rgb(69, 70, 114);
+            ;
+        }
+        
+        /* hacker */
+        .hak-prag {
+            text-align: justify;
+            font-family: "potta 1", cursive;
+            margin-left: 0;
+            color: rgb(20, 25, 68);
+            font-size: large;
+        }
+        
+        /* web deavelopment */
+        
+        .web {
+            margin-left: 0cm;
+        }
+        
+        .web-prag {
+            text-align: justify;
+            font-family: "potta 1", cursive;
+            color: rgb(20, 25, 68);
+            font-size: large;
+        
+        }
+        
+        /* app deavelopment */
+        
+        .app {
+            margin-left: 0cm;
+        }
+        
+        .app-prag {
+            text-align: justify;
+            font-family: "potta 1", cursive;
+            color: rgb(20, 25, 68);
+            font-size: large;
+        
+        }
+        
+        /* machine learning */
+        
+        .machinelearning {
+            margin-left: 0cm;
+        }
+        
+        .machinelearning-prag {
+            text-align: justify;
+            font-family: "potta 1", cursive;
+            color: rgb(20, 25, 68);
+            font-size: large;
+        }
+        
+         /* footer */
+        
+         footer{
+    background-image: url(https://www.softwarepursuits.com/content/uploads/suresync-suite-background.jpg) ;
+    color: white;
+   align-items: center;
+    align-content: flex-start;
+}
+.h4{
+    font-size: 50px;
+    color: deepskyblue;
+    left: 450px;
+
+} 
+.mero{
+     display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    
+
+
+}
+.colomn{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 70px 18px;
+}
+.prag{
+    color: aliceblue;
+    font-size: large;
+    margin-left: 12px;
+}
+.about-us{
+    margin-left: 10px;
+    letter-spacing: 1px;
+    margin: 12px;
+    font-size: 10px;
+    left: 0px;
+    bottom:10px;
+    font-family: "potta 1",cursive;
+    text-shadow: 0 5px 6px rgb(49, 108, 128);
+    color: rgb(229, 238, 241);
+    border-spacing: 10px;
+} 
+
+.colomn h5{
+    font-size: 20px;
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 8px;
+    color: deepskyblue;
+    text-shadow:  0 0 12px rgb(5, 46, 45);
+}
+.colomn h5:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 60%;
+    background-color: deepskyblue;
+}
+.footer-links li{
+    margin: 12px 0;
+    list-style:none;
+
+}
+
+.footer-links li a{
+    text-decoration: none;
+    color: azure;
+    transition: 0.3s;
+}
+.footer-links li a:hover{
+    color:aqua;
+    text-shadow: 0 0 12px;
+}
+.contact-details li {
+    list-style: none;
+    align-items: center;
+    display: flex;
+    margin: 12px 0;
+    color: aqua;
+
+}
+.contact-details li i  {
+    height: 25px;
+    width:20px;
+    border: 3px solid deepskyblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:rgb(232, 233, 233);
+     transition: 0.3s;
+     margin-right:12px ; 
+}
+.contact-details li i:hover  ,.contact-details li span:hover{
+   
+   color: deepskyblue;
+   text-shadow: 0 0 12px;
+
+    
+}
+.social-links{
+    display: flex;
+    list-style: none;
+}
+.social-links li{
+    margin-right: 12px;
+}
+.social-links li a{
+    height: 25px;
+    width:20px;
+    border: 3px solid deepskyblue;
+    background-color:deepskyblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:rgb(238, 249, 249);
+    text-decoration: none;
+     transition: 0.3s;
+     margin-right:12px ; 
+
+}
+.social-links li a:hover{
+    background: transparent;
+    color: deepskyblue;
+}
+
+          </style>
+</head>
+
+<body>
+    <!-- nav search .header #header -->
+    <nav class="navbar" id="navBar">
+            <img src="../../sourses/icon-bar.jpg" alt="icon-bar" id="icon-bar" >
+            <label class="title"> CODING </label>
+            <ul class="ul-list">
+                <li>
+                    <a class="bar-link active-link" href="home.html"> Home </a>
+                </li>
+                <li>
+                    <a class="bar-link" href="../../log in/login.html"> Login</a>
+                </li>
+                <li>
+                    <a class="bar-link" href="#footer">About US</a>
+                </li>
+            </ul>
+    </nav>
+
+    <!-- <div class="img-bg"> 
+        <img src="../../sourses/icon-bar.jpg" alt="icon-bar" id="img-title" >
+    </div> -->
+
+    <div class="content">
+        <section claas="hacker">
+            <div class="hak-img">
+                <img src="https://2.bp.blogspot.com/-zqCIdDDIcVs/W06s5CIQMzI/AAAAAAAACYM/ymoLLpRzTdoCdkLgkQuxPEnyPIySakfzACLcBGAs/s1600/1092073496.png"
+                    alt="" width="300px" height="200px">
+    
+            </div>
+            <div class="hak-prag">
+                <p> Cyber Security </p>
+                means protecting data, networks, programs and other information from unauthorized or unattended access,
+                destruction or change.
+                In today’s world, cybersecurity is very important because of some security threats and cyber-attacks.
+                <br> For data protection, many companies develop software. This software protects the data.
+                Cybersecurity is important because not only it helps to secure information but also our system from virus
+                attack.
+                <br> After the U.S.A. and China, India has the highest number of internet users.
+            </div>
+        </section>
+        <section class="web developer">
+            <div class="web">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhbANFPDI-qc0tGsjwG1G6xt10TfN5ktd6fSTIBkctbXqli6wxJuLhnZF5PZ7sgW1AbhI&usqp=CAU"
+                    alt="" width="300px" height="200px">
+    
+            </div>
+            <div class="web-prag">
+                <p> Web Development </p>
+                The process of creating or updating the content of web pages is referred to as web development, web dev, or
+                web publishing.
+                Whether it is to be viewed on the Internet or a local network,
+                <br> the content created using web development varies widely in its complexity.
+                Tasks can range from quite basic, such as adding text and images,
+                <br> to the much more difficult job of creating an interactive online application (e.g., a game or product
+                shopping system).
+            </div>
+        </section>
+        <section class="app developer">
+            <div class="app">
+                <img src="https://sites.bu.edu/cmcs/files/2018/09/smartphone-636x489.jpg" alt="" width="300px"
+                    height="250px">
+            </div>
+            <div class="app-prag">
+                <p> Mobile Application </p>
+                Mobile application development is the set of processes and procedures involved in writing software for
+                small,
+                <br> wireless computing devices, such as smartphones and other hand-held devices.
+    
+                Like web application development, mobile application development has its roots in more traditional software
+                development.
+                <br> One critical difference, however, is that mobile apps are often written specifically to take advantage
+                of the unique features of
+                a particular mobile device. For example, a gaming app might be written to take advantage of the iPhone's
+                accelerometer or a mobile
+                <br> health app might be written to take advantage of a
+                <br> smartwatch's temperature sensor.
+            </div>
+        </section>
+        <section class="machine learning">
+            <div class="machinelearning">
+                <img src="https://amayei.nyc3.digitaloceanspaces.com/2020/12/190605-artificial-intelligence-i-think-therefore-i-am.jpg"
+                    alt="" width="300px" height="350px">
+    
+            </div>
+            <div class="machinelearning-prag">
+                <p> machine learning </p>
+                This introduction to machine learning provides an overview of its history,
+                important definitions, applications, and concerns within businesses .
+                <br>Machine learning is a branch of artificial intelligence (AI) and computer science which focuses on the
+                use of
+                data and algorithms to imitate the way that humans learn, gradually improving its accuracy.
+    
+                IBM has a rich history with machine learning. One of its own, Arthur Samuel, is credited for coining
+                <br> the term, “machine learning” with his research (PDF, 481 KB) (link resides outside IBM) around
+                the game of checkers. Robert Nealey, the self-proclaimed checkers master, played the game on an IBM 7094
+                computer in 1962,
+                <br> and he lost to the computer. Compared to what can be done today, this feat seems trivial, but it’s
+                considered a major
+                <br> milestone in the field of artificial intelligence.
+            </div>
+        </section>
+    <footer class="mero">
+        <div class="about-us">
+            <div class="h4">About Us</div>
+            <p class="prag">
+                We help you to be your journy of learnning programing easier.
+                <br>
+                So,we do our best to help you .
+                <br>
+                <br>
+                Thank you for your trust.
+            </p>
+        </div>
+        <div class="colomn"> 
+            <h5>GET In Touch</h5>
+            <ul class="contact-details">
+               <li>
+                <i class="fa-solid fa-phone-volume"></i>
+                <span>012852025865</span>
+    
+               </li>
+               <li> 
+                   <i class="fa-solid fa-envelope"></i>
+                   <span>programing312@gmail.com</span>
+               </li>
+               <li> 
+                   <i class="fa-solid fa-location-dot"></i>
+                   <span>13 El-Mansora streat</span>
+               </li>
+            </ul> 
+            <ul class="social-links">
+                <li> 
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                 
+               </li>
+               <li>
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    
+               </li>
+               <li>
+                <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+               </li>
+            </ul>
+            
+            </ul>
+    
+       </div>
+    
+        <div class="colomn"> 
+            <h5>Quick links</h5>
+            <ul class="footer-links">
+                <li>
+                    <a href="#"> Home</a>
+                </li>
+                <li>
+                    <a href="#"> about us</a>
+                </li>
+                <li>
+                    <a href="#"> our services</a>
+                </li>
+                <li>
+                    <a href="#"> contact us</a>
+                </li>
+            </ul>
+        </div>
+        <div class="colomn">
+            <h5>Our courses</h5>
+            <ul class="footer-links">
+                <li>
+                    <a href="#">web development</a>
+                </li>
+                <li>
+                    <a href="#"> app development</a>
+                </li>
+                <li>
+                    <a href="#"> AI</a>
+                </li>
+                <li>
+                    <a href="#"> SEO services</a>
+                </li>
+            </ul>
+             </div>
+       
+        </footer>
+    
+
+    <!-- <script type="text/javascript" src="home.js"></script> -->
+</body>
+
+</html>

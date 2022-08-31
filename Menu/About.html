@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://kit.fontawesome.com/49f4a37b06.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/master.css">
+    <title>ABOUT US</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Ballo 2" cursive;
+        }
+
+        body {
+            background-color: rgb(4, 4, 38);
+            overflow-x: hidden;
+        }
+        a{
+    text-decoration: none;
+    list-style: none;
+}
+h1 {
+    text-align: center;
+    margin: 10px;
+}
+
+        /* NAV  */
+nav {
+    display: flex;
+    background-color: rgb(24, 24, 25);
+    height: max-content;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+#search-list {
+    margin-top: 100px;
+}
+
+
+
+.title{
+    color:aliceblue;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 10px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+.ul-list {
+    float: right;
+    margin-right: 20px;
+}
+
+.ul-list li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+a.active-link,a.title-bar {
+    color: rgb(216, 207, 207);
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+a.active-link,a.title-bar:hover{
+    background-color: rgb(56 56 59);
+    border-bottom: 2px solid rgb(199, 203, 206);
+    transition: 0.5s;
+}
+
+        /* form */
+        .box {
+            width: 600px;
+            text-align: center;
+            background-image: url("https://www.softwarepursuits.com/content/uploads/suresync-suite-background.jpg");
+            background-repeat: no-repeat;
+            background-position-x: center;
+            background-size: cover;
+            margin: 50px 0 30px 350px;
+            height: 400px;
+        }
+
+        .box textarea[placeholder="fedback"],
+        .box input[placeholder="rate "],
+        .box input[placeholder=" E-mail"],
+        .box input[placeholder="phone"] {
+            font-weight: 1000;
+            bleed: 100;
+            font-size: large;
+            transition: 0.2s;
+            text-align: center;
+        }
+
+        .box textarea {
+            border: 20;
+            margin: 10px auto;
+            text-align: center;
+            border: 1px solid rgb(5, 128, 156);
+            padding: 1px 1px;
+            width: 550px;
+            border-radius: 10px;
+            opacity: 50%;
+            direction: ltr;
+        }
+
+        .box input[type="submit"],
+        .box input[type="email"],
+        .box input[type="text"],
+        .box input[type="number"] {
+            width: 150px;
+            height: 30px;
+            border-radius: 10px;
+            border: 5px;
+            display: block;
+            margin: 20px auto;
+            border: 1px solid rgb(5, 128, 156);
+            padding: 1px 1px;
+            opacity: 50%;
+        }
+
+        .box input[type="submit"] {
+            height: 50px;
+        }
+
+        .box input[type="text"]:focus,
+        .box input[type="email"]:focus,
+        .box input[type="number"]:focus {
+            width: 250px;
+            bleed: 100px;
+            color: aliceblue;
+            border-color: rgb(5, 128, 156);
+            background-color: rgb(0, 3, 37);
+            box-shadow: 0 5px 12px rgb(189, 192, 218);
+        }
+
+        .box textarea:focus {
+            width: 570px;
+            bleed: 100px;
+            color: white;
+            background-color: rgb(0, 3, 37);
+            box-shadow: 0 5px 12px rgb(189, 192, 218);
+        }
+
+        .box input[type="submit"]:hover {
+            background-color: rgb(189, 192, 218);
+            box-shadow: 0 7px 12px rgb(131, 211, 231);
+        }
+
+        .row {
+            align-items: center;
+            justify-content: space-between 0px;
+            inline-size: 0.5px;
+        }
+
+        .title-animation {
+            position: relative;
+            width: 600px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 350px;
+        }
+
+        .title-animation p {
+            color: aliceblue;
+            font-size: 5em;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-shadow: 0 0 10px deepskyblue,
+                0 0 20px deepskyblue,
+                0 0 40px deepskyblue,
+                0 0 80px deepskyblue,
+                0 0 120px deepskyblue;
+
+        }
+
+        .lightbar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 10px;
+            height: 100%;
+            border-radius: 10px;
+            z-index: 2;
+            background-color: aliceblue;
+            box-shadow: 0 0 10px deepskyblue,
+                0 0 20px deepskyblue,
+                0 0 40px deepskyblue,
+                0 0 80px deepskyblue,
+                0 0 120px deepskyblue;
+            animation: animatelightbar 5s linear infinite;
+
+        }
+
+        @keyframes animatelightbar {
+
+            0%,
+            5% {
+                transform: scaleY(0) translateX(0);
+            }
+
+            10% {
+                transform: scaleY(1) translateX(0);
+            }
+
+            90% {
+                transform: scaleY(1) translateX(calc(600px - 10px));
+            }
+
+            95%,
+            100% {
+                transform: scaleY(0) translateX(calc(600px - 10px));
+            }
+        }
+
+        .toplayer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(4, 4, 38);
+            animation: animatetoplayer 10s linear infinite;
+
+        }
+
+        @keyframes animatetoplayer {
+
+            0%,
+            2.5% {
+                transform: translateX(0);
+            }
+
+            5% {
+                transform: translateX(0);
+            }
+
+            45% {
+                transform: translateX(100%);
+            }
+
+            47.5%,
+            50% {
+                transform: translateX(100%);
+            }
+
+            50.001%,
+            52.5% {
+                transform: translateX(-100%);
+            }
+
+            55% {
+                transform: translateX(-100%);
+            }
+
+            95% {
+                transform: translateX(0);
+            }
+
+            95.5%,
+            100% {
+                transform: translateX(0);
+            }
+
+        }
+
+        /* footer */
+
+        footer {
+            margin-top: 200px;
+            background-image: url(https://www.softwarepursuits.com/content/uploads/suresync-suite-background.jpg);
+            color: white;
+            align-items: center;
+            align-content: flex-start;
+        }
+
+        h4 {
+            font-size: 50px;
+            color: deepskyblue;
+        }
+
+        .mero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .colomn {
+            width: 300px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 70px 18px;
+        }
+
+        .logo {
+            margin-left: 10px;
+            letter-spacing: 1px;
+            margin: 12px;
+            font-size: 10px;
+            font-family: "potta 1", cursive;
+            text-shadow: 0 5px 6px rgb(49, 108, 128);
+            color: rgb(229, 238, 241);
+        }
+
+        .colomn h5 {
+            font-size: 20px;
+            letter-spacing: 2px;
+            position: relative;
+            padding-bottom: 8px;
+            color: deepskyblue;
+            text-shadow: 0 0 12px rgb(5, 46, 45);
+        }
+
+        .colomn h5::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 60%;
+            background-color: deepskyblue;
+        }
+
+        .footer-links li {
+            margin: 12px 0;
+            list-style: none;
+        }
+
+        .footer-links li a {
+            text-decoration: none;
+            color: azure;
+            transition: 0.3s;
+        }
+
+        .footer-links li a:hover {
+            color: aqua;
+            text-shadow: 0 0 12px;
+        }
+
+        .contact-details li {
+            list-style: none;
+            align-items: center;
+            display: flex;
+            margin: 12px 0;
+            color: aqua;
+        }
+
+        .contact-details li i {
+            height: 25px;
+            width: 20px;
+            border: 3px solid deepskyblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(232, 233, 233);
+            transition: 0.3s;
+            margin-right: 12px;
+        }
+
+        .contact-details li i:hover,
+        .contact-details li span:hover {
+            color: deepskyblue;
+            text-shadow: 0 0 12px;
+        }
+
+        .social-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .social-links li {
+            margin-right: 12px;
+        }
+
+        .social-links li a {
+            height: 25px;
+            width: 20px;
+            border: 3px solid deepskyblue;
+            background-color: deepskyblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(238, 249, 249);
+            text-decoration: none;
+            transition: 0.3s;
+            margin-right: 12px;
+        }
+
+        .social-links li a:hover {
+            background: transparent;
+            color: deepskyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <label class="title"> CODING </label>
+    <ul class="ul-list">
+        <li>
+            <a class="title-bar" href="Menu.html"> Menu </a>
+        </li>
+        <li>
+            <a class="title-bar" href="courses.html"> Courses </a>
+        </li>
+        <li>
+            <a class="title-bar" href="teachers.html"> Live </a>
+        </li>
+        <li>
+            <a class="title-bar" href="tutorial.html"> Tutorial</a>
+        </li>
+        <li>
+            <a class="active-link" href="About.html"> About Us</a>
+        </li>
+        <li>
+            <a class="title-bar" href="home.html"> Logout </a>
+        </li>
+    </ul>
+</nav>
+
+    <form class="box">
+        <div class="mero">
+            <input type="email" required placeholder=" E-mail">
+            <input type="text" required placeholder="phone">
+            <input type="number" required placeholder="rate " min="0" max="10" title="please rate us [0,10]">
+        </div>
+        <textarea required placeholder="fedback" rows="10" cols="30"></textarea>
+        <input type="submit">
+    </form>
+    <div class="title-animation">
+        <div class="lightbar"></div>
+        <div class="toplayer"></div>
+        <p> Thank you</p>
+    </div>
+
+
+    <footer class="mero">
+        <div class="logo">
+            <h4>ABOUT US</h4>
+            <p class="prag">
+                We help you to be your journy of learnning programing easier.
+                <br>
+                So,we do our best to help you .
+                <br>
+                <br>
+                Thank you for your trust.
+            </p>
+        </div>
+        <div class="colomn">
+            <h5>GET In Touch</h5>
+            <ul class="contact-details">
+                <li>
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <span>012852025865</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>programing312@gmail.com</span>
+                </li>
+                <li>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>13 El-Mansora streat</span>
+                </li>
+            </ul>
+            <ul class="social-links">
+                <li>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                </li>
+            </ul>
+
+
+
+        </div>
+
+        <div class="colomn">
+            <h5>Quick links</h5>
+            <ul class="footer-links">
+                <li>
+                    <a href="home.html"> Home</a>
+                </li>
+                <li>
+                    <a href="#"> about us</a>
+                </li>
+                <li>
+                    <a href="Menu.html"> Menu</a>
+                </li>
+                <li>
+                    <a href="tutorial.html"> tutorial</a>
+                </li>
+            </ul>
+        </div>
+        <div class="colomn">
+            <h5>Our courses</h5>
+            <ul class="footer-links">
+                <li>
+                    <a href="#">web development</a>
+                </li>
+                <li>
+                    <a href="#">Desktop Application</a>
+                </li>
+                <li>
+                    <a href="#"> AI</a>
+                </li>
+                <li>
+                    <a href="#">Machine Learning</a>
+                </li>
+            </ul>
+        </div>
+
+    </footer>
+</body>
+
+</html>

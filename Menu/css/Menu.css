@@ -1,0 +1,351 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: montserrat, sans-serif;
+    background-color: rgb(173 193 212);
+}
+h1 {
+    text-align: center;
+    margin: 10px;
+}
+a{
+    text-decoration: none;
+    list-style: none;
+}
+
+        /* NAV  */
+nav {
+    display: flex;
+    background-color: rgb(24, 24, 25);
+    height: max-content;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+#search-list {
+    margin-top: 100px;
+}
+
+.logo {
+    position: absolute;
+    top: 250px;
+    left: 550px;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    mix-blend-mode: luminosity;
+}
+
+.title{
+    color:aliceblue;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 10px;
+    font-weight: bold;
+    margin-left: 70px;
+}
+
+.ul-list {
+    float: right;
+    margin-right: 80px;
+}
+
+.ul-list li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 10px;
+}
+
+a {
+    color: rgb(216, 207, 207);
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+a.active-link,a.title-bar:hover{
+    background-color: rgb(56 56 59);
+    border-bottom: 2px solid rgb(199, 203, 206);
+    transition: 0.5s;
+}
+
+.img-bg {
+    background-image: linear-gradient(rgba(82, 96, 173, 0.589),rgba(51, 63, 130, 0.548)),url("../sourses/Monster-Hiding-in-Storage.jpg");
+    height: 600px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.courses {
+    display: flex;
+    align-items: center;
+    margin-left: 450px;
+    margin-top: 20px;
+    text-align: center;
+    
+}
+
+/* IOT   */
+section {
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Container {
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    border: 7px;
+    border-color: #262626;
+    border-style: solid;
+    border-radius: 10px;
+    box-shadow: 0px 50px 100px #262626;
+}
+
+
+img {
+    width: 987px;
+    height: 490px;
+    transition: 1s;
+}
+
+.img-slide {
+    position: absolute;
+    z-index: 0;
+    transition: 1s;
+}
+
+.dot {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    z-index: 99;
+    background: #333;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .5s;
+    box-shadow: 0px 0px 5px #fff;
+}
+
+.dot.a1 {
+    margin-left: -30px
+}
+
+.dot.a2 {
+    margin-left: -10px
+}
+
+.dot.a3 {
+    margin-left: 10px
+}
+
+
+.dot.a1:hover {
+    background: #fff
+}
+
+.dot.a2:hover {
+    background: #fff
+}
+
+.dot.a3:hover {
+    background: #fff
+}
+
+    /* Ai */
+.dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    z-index: 99;
+    background: #333;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .5s;
+    box-shadow: 0px 0px 5px #fff;
+}
+
+.dots.Ai1 {
+    margin-left: -30px
+}
+
+.dots.Ai2 {
+    margin-left: -10px
+}
+
+.dots.Ai3 {
+    margin-left: 10px
+}
+
+
+.dots.Ai1:hover {
+    background: #fff
+}
+
+.dots.Ai2:hover {
+    background: #fff
+}
+
+.dots.Ai3:hover {
+    background: #fff
+}
+
+/* iot */
+
+.doots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    z-index: 99;
+    background: #333;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .5s;
+    box-shadow: 0px 0px 5px #fff;
+}
+
+.doots.iot1 {
+    margin-left: -30px
+}
+
+.doots.iot2 {
+    margin-left: -10px
+}
+
+.doots.iot3 {
+    margin-left: 10px
+}
+
+
+.doots.iot1:hover {
+    background: #fff
+}
+
+.doots.iot2:hover {
+    background: #fff
+}
+
+.doots.iot3:hover {
+    background: #fff
+}
+
+/* ml */
+
+.dat {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    z-index: 99;
+    background: #333;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .5s;
+    box-shadow: 0px 0px 5px #fff;
+}
+
+.dat.ml1 {
+    margin-left: -30px
+}
+
+.dat.ml2 {
+    margin-left: -10px
+}
+
+.dat.ml3 {
+    margin-left: 10px
+}
+
+
+.dat.ml1:hover {
+    background: #fff
+}
+
+.dat.ml2:hover {
+    background: #fff
+}
+
+.dat.ml3:hover {
+    background: #fff
+}
+
+/* dl */
+
+.dats {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    z-index: 99;
+    background: #333;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .5s;
+    box-shadow: 0px 0px 5px #fff;
+}
+
+.dats.dl1 {
+    margin-left: -30px
+}
+
+.dats.dl2 {
+    margin-left: -10px
+}
+
+.dats.dl3 {
+    margin-left: 10px
+}
+
+.dats.dl4 {
+    margin-left: 50px
+}
+
+.dats.dl5 {
+    margin-left: 30px
+}
+
+
+.dats.dl1:hover {
+    background: #fff
+}
+
+.dats.dl2:hover {
+    background: #fff
+}
+
+.dats.dl3:hover {
+    background: #fff
+}
+
+.dats.dl4:hover {
+    background: #fff
+}
+
+.dats.dl5:hover {
+    background: #fff
+}
+
+
+

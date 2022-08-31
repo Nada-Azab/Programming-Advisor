@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Form</title>
+        <link rel="stylesheet" href="css/login.css">
+    </head>
+
+    <body>
+        <nav>
+            <img src="sourses/icon-bar.jpg" alt="icon-bar" id="icon-bar" >
+            <label class="title"> CODING </label>
+            <ul class="ul-list">
+                <li>
+                    <a class="title-bar" href="home.html"> Home </a>
+                </li>
+                <li>
+                    <a class="active-link" href="login.html"> Login</a>
+                </li>
+                <li>
+                    <a class="title-bar" href="About.html">About US</a>
+                </li>
+            
+        </nav>
+        <div id="log">
+            <h1>Login Form</h1>
+            <div id="log-form" >
+                <div class="form-control">
+                    <input type="email" id="email1" required>
+                    <label for="email1" id="lbl">E-mail</label>
+
+                </div>
+                <div class="form-control">
+                    <input type="password" id="pass1" required>
+                    <label for="pass1">Password</label>
+                </div>
+                <!-- <input type="button" class="btn" onclick="ver()" value="Login" /> -->
+                <button  class="btn" onclick="getinfo()">Login</button>
+                <!-- <button class="btn" onclick="ver()">Login</button> -->
+
+                <div>
+                    <p class="text">
+                        Do you not have an account?
+                        <a href="#" onclick="next()">Register</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Registeration -->
+        <div id="regis">
+            <h1>Registeration</h1>
+            <div id="reg-form">
+                <div class="form-control">
+                    <input type="text" name="fname" id="fname" required>
+                    <label for="fname">First Name</label>
+                </div>
+                <div class="form-control">
+                    <input type="text" id="lname" name="lname" required>
+                    <label for="lname">Last Name</label>
+                </div>
+
+                <div class="form-control">
+                    <input type="email" id="email2" name="email" required>
+                    <label for="email2">E-mail</label>
+                </div>
+
+                <div class="form-control">
+                    <input type="text" id="phone" name="phone" required maxlength="11" >
+                    <label for="phone">Phone</label>
+                </div>
+
+                <div class="form-control">
+                    <input type="password" id="pass2" name="password" required minlength="5" maxlength="25">
+                    <label for="pass2">Password</label>
+                </div>
+
+                <!-- <button type="submit" class="btn" id="sendData" >Submit</button> -->
+                <button class="btn" id="sendData">Submit</button>
+
+                <div>
+                    <p class="text">
+                        Already a member?
+                        <a href="#" onclick="prev()">Login Now</a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    
+        <!-- You registered successfully -->
+
+
+
+
+        <script src="login.js"></script>
+    </body>
+
+</html>
