@@ -6,4 +6,4 @@ An educational site that brings together the important aspects of the student an
 
 >3. To follow courses established by specialists in the field.
 
-##My Task :Make a page(tutorials page) that shows centers (in the form of cards) in the tabs he does specify.
+## **My Task** :Make a page(tutorials page) that shows centers (in the form of cards) in the tabs he does specify.
