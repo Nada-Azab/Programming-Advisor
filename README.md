@@ -5,3 +5,5 @@ An educational site that brings together the important aspects of the student an
 >2. To book a course in programming centers and related fields, and to determine the most appropriate place and place for him.
 
 >3. To follow courses established by specialists in the field.
+
+##My Task :Make a page(tutorials page) that shows centers (in the form of cards) in the tabs he does specify.
